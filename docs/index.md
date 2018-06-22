@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# SPEG03 PORTAL
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## About
 
-## Commands
+* **Name**: speg03 (Takahiro Yano)
+* **Job**: IT Infrastructure Engineer / Software Developer
+* **Location**: Tokyo, Japan
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+関西人らしからぬ京都生まれ。焦らずのんびりマイペース、毎日のほほんと暮らす日々。
 
-## Project layout
+## Interests
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+最初の頃はJavaのWebアプリ開発などをやっていたが、そのうち部内のサーバー管理を任される。それ以降、インフラ構築の効率化などに興味を持つ。もともと開発をやっていたこともあり、開発者にとってうれしい開発環境を考えるのが好き。
