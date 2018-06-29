@@ -1,7 +1,7 @@
-site_name: speg03 portal
+site_name: SPEG03
 site_description: Portal site about speg03
 site_author: Takahiro Yano
-site_url: https://speg03.github.io/portal/
+site_url: https://speg03.github.io/
 
 copyright: Copyright &copy; 2018 Takahiro Yano
 
@@ -11,6 +11,9 @@ theme:
 
 pages:
   - Home: index.md
+  - Experience: experience.md
+  - Products: products.md
+  - Outside Work: outside_work.md
 
 extra:
   social:
@@ -20,9 +23,7 @@ extra:
       link: https://twitter.com/speg03
     - type: facebook-square
       link: https://www.facebook.com/speg03
+    - type: book
+      link: https://qiita.com/speg03
     - type: envelope-o
       link: mailto:speg03@gmail.com
-
-markdown_extensions:
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
