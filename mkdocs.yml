@@ -5,6 +5,8 @@ site_url: https://speg03.github.io/
 
 copyright: Copyright &copy; 2018 Takahiro Yano
 
+remote_branch: master
+
 theme:
   name: material
   language: ja
