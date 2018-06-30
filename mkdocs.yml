@@ -11,12 +11,6 @@ theme:
   name: material
   language: ja
 
-pages:
-  - Home: index.md
-  - Experience: experience.md
-  - Products: products.md
-  - Outside Work: outside_work.md
-
 extra:
   social:
     - type: github
@@ -27,3 +21,7 @@ extra:
       link: https://www.facebook.com/speg03
     - type: envelope-o
       link: mailto:speg03@gmail.com
+
+plugins:
+  - search
+  - awesome-pages
