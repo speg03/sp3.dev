@@ -4,7 +4,7 @@ site_author: Takahiro Yano
 site_url: https://speg03.github.io/
 
 copyright: Copyright &copy; 2018 Takahiro Yano
-
+google_analytics: [UA-121673953-1, speg03.github.io]
 remote_branch: master
 
 theme:
