@@ -10,8 +10,7 @@ the_silver_searcher
 ## curl
 
 * Options
-    * `-C <offset>`, `--continue-at <offset>`: 部分ダウンロード
-        * offsetに-を指定した場合は自動的にオフセットを検出
+    * `-C <offset>`, `--continue-at <offset>`: 部分ダウンロード（offsetに-を指定した場合は自動的にオフセットを検出して続きからダウンロードする）
 
 ## cut
 
