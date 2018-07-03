@@ -1,5 +1,11 @@
 # Git
 
+## Commit Messages Guide
+
+* [gitmoji](https://gitmoji.carloscuesta.me/)
+* [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
+* [Styleguides - Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages)
+
 ## Tips
 
 * REVISIONの指定方法
