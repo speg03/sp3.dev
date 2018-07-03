@@ -30,8 +30,3 @@
 * Studied a little
     * Scala, Haskell, C/C++
     * OpenShift
-
-## Certifications
-
-* AWS Certified Solutions Architect - Professional (2018.03)
-* AWS Certified Solutions Architect - Associate (2016.03)
