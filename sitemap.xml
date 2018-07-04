@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://speg03.github.io/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://speg03.github.io/experience/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://speg03.github.io/outside_work/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://speg03.github.io/products/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://speg03.github.io/memo/commands_reference/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://speg03.github.io/memo/git/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://speg03.github.io/memo/jupyter/</loc>
-     <lastmod>2018-07-03</lastmod>
+     <lastmod>2018-07-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://speg03.github.io/memo/squid/</loc>
+     <lastmod>2018-07-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
