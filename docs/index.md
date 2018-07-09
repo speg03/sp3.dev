@@ -16,3 +16,14 @@
 
 現在は深層学習に関するアプリケーション開発を行っている。深層学習フレームワークを用いた学習器の構築や、クラウドを利用した学習インフラの構築が主。
 
+## Strengths
+
+私の CliftonStrengths TOP5
+
+1. 調和性
+1. 収集心
+1. 公平性
+1. 学習欲
+1. 最上志向
+
+refs: [CliftonStrengthsについて - Gallup](https://www.gallupstrengthscenter.com/home/ja-jp/about)
