@@ -16,17 +16,3 @@
 
 現在は深層学習に関するアプリケーション開発を行っている。深層学習フレームワークを用いた学習器の構築や、クラウドを利用した学習インフラの構築が主。
 
-## Skills
-
-* Daily used
-    * Python, Bash, Zsh
-    * Flask, Keras, TensorFlow
-    * Ansible, Docker, AWS
-    * Emacs, Linux (Fedora)
-* Experienced
-    * Ruby, JavaScript, Java
-    * Ruby on Rails, Sinatra
-    * Chef
-* Studied a little
-    * Scala, Haskell, C/C++
-    * OpenShift

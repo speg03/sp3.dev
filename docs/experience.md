@@ -10,6 +10,21 @@ TBD
 
 ソフトウェアのユーザビリティに着目して、定量的な評価・問題箇所の検出を試みた。特にGUIアプリケーションの画面変化（フィードバック）が一定時間発生しない場合、どの処理に時間がかかっているのかを検出するという研究を行った。
 
+## Skills
+
+* Daily used
+    * Python, Bash, Zsh
+    * Flask, Keras, TensorFlow
+    * Ansible, Docker, AWS
+    * Emacs, Linux (Fedora)
+* Experienced
+    * Ruby, JavaScript, Java
+    * Ruby on Rails, Sinatra
+    * Chef
+* Studied a little
+    * Scala, Haskell, C/C++
+    * OpenShift
+
 ## Certifications
 
 * AWS Certified Solutions Architect - Professional (2018.03)
