@@ -5,10 +5,10 @@ script:
   - mkdocs build --verbose --clean --strict
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
   keep-history: true
-  local_dir: site
-  target_branch: master
+  local-dir: site
+  target-branch: master
   on:
     branch: source
