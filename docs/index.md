@@ -18,7 +18,7 @@
 
 ## Strengths
 
-私の CliftonStrengths TOP5
+私の CliftonStrengths TOP5 (2018.07)
 
 1. 調和性
 1. 収集心
