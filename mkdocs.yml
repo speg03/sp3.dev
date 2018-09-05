@@ -21,3 +21,6 @@ extra:
       link: https://www.facebook.com/speg03
     - type: envelope-o
       link: mailto:speg03@gmail.com
+
+markdown_extensions:
+  - codehilite

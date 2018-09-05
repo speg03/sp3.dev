@@ -1,5 +1,33 @@
 # Git
 
+## Configurations
+
+Linux
+
+```
+[user]
+	name = Takahiro Yano
+	email = speg03@gmail.com
+	signingkey = XXXXXXXXXXXXXXXX
+[credential]
+	helper = store --file ~/.cache/git/credentials
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+```
+
+macOS
+
+```
+[user]
+	name = Takahiro Yano
+	email = speg03@gmail.com
+	signingkey = XXXXXXXXXXXXXXXX
+[commit]
+	gpgsign = true
+```
+
 ## Commit Messages Guide
 
 * [Emojiで楽しく綺麗なコミットを手に入れる - Goodpatch Blog](https://goodpatch.com/blog/beautiful-commits-with-emojis/)
