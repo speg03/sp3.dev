@@ -76,6 +76,7 @@ refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/comma
 ## rsync
 
 * Options
+    * `-v`, `--verbose`: 詳細表示
     * `-a`, `--archive`: `-rlptgoD`と同じ
     * `-r`, `--recursive`: 再帰的にたどる
     * `-l`, `--links`: シンボリックリンクをシンボリックリンクのままコピー
@@ -88,6 +89,10 @@ refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/comma
     * `--executability`: 実行可能フラグを維持する
     * `-n`, `--dry-run`: ファイルコピーを実行せず何が起こるかだけ表示
     * `--rsync-path=PROGRAM`: リモート側で実行するrsyncのパスを指定（sudo rsyncを指定するとroot権限で実行することになる）
+    * `-z`, `--compress`: 転送時にデータを圧縮する
+    * `-C`, `--cvs-exclude`: CVS関連ファイルを除外する
+    * `-f`, `--filter=RULE`: ファイルのフィルタリングルール
+    * `-F`: `--filter='dir-merge /.rsync-filter'`のエイリアス
     * `-P`: 部分ダウンロード、かつ、進捗の表示
 
 ## tail
