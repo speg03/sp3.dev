@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.3, mkdocs-material-3.0.4">
     
     
       
@@ -54,8 +54,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -305,6 +305,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../fedora/" title="Fedora" class="md-nav__link">
+      Fedora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../git/" title="Git" class="md-nav__link">
       Git
     </a>
@@ -317,8 +329,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../gnupg/" title="GnuPG" class="md-nav__link">
+      GnuPG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../jupyter/" title="Jupyter" class="md-nav__link">
       Jupyter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../macos/" title="macOS" class="md-nav__link">
+      macOS
     </a>
   </li>
 
@@ -389,8 +425,9 @@
 <ul>
 <li>署名付きURLの発行</li>
 </ul>
-<pre><code>aws s3 presign --expires-in 3600 s3://bucket_name/object_key
-</code></pre>
+<div class="codehilite"><pre><span></span>aws s3 presign --expires-in 3600 s3://bucket_name/object_key
+</pre></div>
+
 
 <p>指定したオブジェクトを一時的に公開してダウンロードできるURLを発行する。<code>expires-in</code>は発行した署名付きURLの期限。デフォルトでは3600秒（1時間）。</p>
                 
@@ -500,7 +537,7 @@
           
         
       
-      <script>app.initialize({version:"1.0",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.3",url:{base:"../.."}})</script>
       
     
     

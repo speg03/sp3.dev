@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.3, mkdocs-material-3.0.4">
     
     
       
@@ -54,8 +54,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -403,6 +403,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../fedora/" title="Fedora" class="md-nav__link">
+      Fedora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../git/" title="Git" class="md-nav__link">
       Git
     </a>
@@ -415,8 +427,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../gnupg/" title="GnuPG" class="md-nav__link">
+      GnuPG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../jupyter/" title="Jupyter" class="md-nav__link">
       Jupyter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../macos/" title="macOS" class="md-nav__link">
+      macOS
     </a>
   </li>
 
@@ -608,8 +644,9 @@
 <ul>
 <li>転送の進捗を確認する</li>
 </ul>
-<pre><code>kill -USR1 &lt;ddのプロセスID&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>kill -USR1 &lt;ddのプロセスID&gt;
+</pre></div>
+
 
 <h2 id="df">df</h2>
 <p>ディスクごとのディスク使用量を調べる。</p>
@@ -641,8 +678,9 @@
 <ul>
 <li>リンク切れしたシンボリックリンクを探す</li>
 </ul>
-<pre><code>find -L /path/to/check -type l
-</code></pre>
+<div class="codehilite"><pre><span></span>find -L /path/to/check -type l
+</pre></div>
+
 
 <p>refs: <a href="https://www.commandlinefu.com/commands/view/2369/find-broken-symlinks-and-delete-them">Find broken symlinks and delete them</a></p>
 <h2 id="grep">grep</h2>
@@ -665,6 +703,7 @@
 <h2 id="rsync">rsync</h2>
 <ul>
 <li>Options<ul>
+<li><code>-v</code>, <code>--verbose</code>: 詳細表示</li>
 <li><code>-a</code>, <code>--archive</code>: <code>-rlptgoD</code>と同じ</li>
 <li><code>-r</code>, <code>--recursive</code>: 再帰的にたどる</li>
 <li><code>-l</code>, <code>--links</code>: シンボリックリンクをシンボリックリンクのままコピー</li>
@@ -677,6 +716,10 @@
 <li><code>--executability</code>: 実行可能フラグを維持する</li>
 <li><code>-n</code>, <code>--dry-run</code>: ファイルコピーを実行せず何が起こるかだけ表示</li>
 <li><code>--rsync-path=PROGRAM</code>: リモート側で実行するrsyncのパスを指定（sudo rsyncを指定するとroot権限で実行することになる）</li>
+<li><code>-z</code>, <code>--compress</code>: 転送時にデータを圧縮する</li>
+<li><code>-C</code>, <code>--cvs-exclude</code>: CVS関連ファイルを除外する</li>
+<li><code>-f</code>, <code>--filter=RULE</code>: ファイルのフィルタリングルール</li>
+<li><code>-F</code>: <code>--filter='dir-merge /.rsync-filter'</code>のエイリアス</li>
 <li><code>-P</code>: 部分ダウンロード、かつ、進捗の表示</li>
 </ul>
 </li>
@@ -737,13 +780,13 @@
           </a>
         
         
-          <a href="../git/" title="Git" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../fedora/" title="Fedora" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                Git
+                Fedora
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -809,7 +852,7 @@
           
         
       
-      <script>app.initialize({version:"1.0",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.3",url:{base:"../.."}})</script>
       
     
     

@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.3, mkdocs-material-3.0.4">
     
     
       
@@ -54,8 +54,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -267,6 +267,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../fedora/" title="Fedora" class="md-nav__link">
+      Fedora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../git/" title="Git" class="md-nav__link">
       Git
     </a>
@@ -279,8 +291,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../gnupg/" title="GnuPG" class="md-nav__link">
+      GnuPG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../jupyter/" title="Jupyter" class="md-nav__link">
       Jupyter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../macos/" title="macOS" class="md-nav__link">
+      macOS
     </a>
   </li>
 
@@ -474,27 +510,30 @@
 <p>refs: <a href="http://squid.diladele.com/">Squid for Windows</a></p>
 <h2 id="access-ports-limitations">Access ports limitations</h2>
 <p>ローカルで動かすだけなので、ポートの制限を外す。</p>
-<pre><code># Deny requests to certain unsafe ports
+<div class="codehilite"><pre><span></span># Deny requests to certain unsafe ports
 #http_access deny !Safe_ports
 
 # Deny CONNECT to other than secure SSL ports
 #http_access deny CONNECT !SSL_ports
-</code></pre>
+</pre></div>
+
 
 <h2 id="hosts">Hosts</h2>
 <p>hostsファイルをサーバーの名前解決に使用する。デフォルトで設定されているはずが有効になっていない模様。</p>
-<pre><code># Hosts
+<div class="codehilite"><pre><span></span># Hosts
 hosts_file C:/Windows/System32/drivers/etc/hosts
-</code></pre>
+</pre></div>
+
 
 <h2 id="dns">DNS</h2>
 <p>Squidからの名前解決に使用するDNSサーバー。</p>
-<pre><code># DNS
+<div class="codehilite"><pre><span></span># DNS
 dns_nameservers 192.168.0.127 192.168.10.127
-</code></pre>
+</pre></div>
+
 
 <h2 id="parent-proxy">Parent proxy</h2>
-<pre><code># Parent proxy with authentication
+<div class="codehilite"><pre><span></span># Parent proxy with authentication
 
 ## この宛先へのリクエストは親プロキシを通さない
 acl dst.localnet dst 10.0.0.0/8
@@ -512,130 +551,133 @@ cache_peer_access proxy.parent deny dst.localdomain
 always_direct allow dst.localnet
 always_direct allow dst.localdomain
 never_direct allow all
-</code></pre>
+</pre></div>
+
 
 <h2 id="logging">Logging</h2>
 <p><code>logfile_rotate</code>の数だけファイルローテーションする。</p>
-<pre><code># Logging with readable date
+<div class="codehilite"><pre><span></span># Logging with readable date
 logformat squid %tl %6tr %&gt;a %Ss/%03Hs %&lt;st %rm %ru %un %Sh/%&lt;A %mt
 logfile_rotate 30
-</code></pre>
+</pre></div>
+
 
 <p>以下を実行することでローテーションされる。<code>-n</code>はWindowsサービス名。</p>
-<pre><code>squid.exe -k rotate -n squidsrv
-</code></pre>
+<div class="codehilite"><pre><span></span>squid.exe -k rotate -n squidsrv
+</pre></div>
+
 
 <h2 id="full-configurations">Full configurations</h2>
-<pre><code>#
-# Recommended minimum configuration:
-#
+<div class="codehilite"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Recommended minimum configuration:</span>
+<span class="c1">#</span>
 
-# Example rule allowing access from your local networks.
-# Adapt to list your (internal) IP networks from where browsing
-# should be allowed
-acl localnet src 10.0.0.0/8 # RFC1918 possible internal network
-acl localnet src 172.16.0.0/12  # RFC1918 possible internal network
-acl localnet src 192.168.0.0/16 # RFC1918 possible internal network
-acl localnet src fc00::/7       # RFC 4193 local private network range
-acl localnet src fe80::/10      # RFC 4291 link-local (directly plugged) machines
+<span class="c1"># Example rule allowing access from your local networks.</span>
+<span class="c1"># Adapt to list your (internal) IP networks from where browsing</span>
+<span class="c1"># should be allowed</span>
+<span class="n">acl</span> <span class="n">localnet</span> <span class="n">src</span> <span class="mf">10.0.0.0</span><span class="o">/</span><span class="mi">8</span> <span class="c1"># RFC1918 possible internal network</span>
+<span class="n">acl</span> <span class="n">localnet</span> <span class="n">src</span> <span class="mf">172.16.0.0</span><span class="o">/</span><span class="mi">12</span>  <span class="c1"># RFC1918 possible internal network</span>
+<span class="n">acl</span> <span class="n">localnet</span> <span class="n">src</span> <span class="mf">192.168.0.0</span><span class="o">/</span><span class="mi">16</span> <span class="c1"># RFC1918 possible internal network</span>
+<span class="n">acl</span> <span class="n">localnet</span> <span class="n">src</span> <span class="nn">fc00::</span><span class="o">/</span><span class="mi">7</span>       <span class="c1"># RFC 4193 local private network range</span>
+<span class="n">acl</span> <span class="n">localnet</span> <span class="n">src</span> <span class="nn">fe80::</span><span class="o">/</span><span class="mi">10</span>      <span class="c1"># RFC 4291 link-local (directly plugged) machines</span>
 
-acl SSL_ports port 443
-acl Safe_ports port 80      # http
-acl Safe_ports port 21      # ftp
-acl Safe_ports port 443     # https
-acl Safe_ports port 70      # gopher
-acl Safe_ports port 210     # wais
-acl Safe_ports port 1025-65535  # unregistered ports
-acl Safe_ports port 280     # http-mgmt
-acl Safe_ports port 488     # gss-http
-acl Safe_ports port 591     # filemaker
-acl Safe_ports port 777     # multiling http
-acl CONNECT method CONNECT
+<span class="n">acl</span> <span class="n">SSL_ports</span> <span class="n">port</span> <span class="mi">443</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">80</span>      <span class="c1"># http</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">21</span>      <span class="c1"># ftp</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">443</span>     <span class="c1"># https</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">70</span>      <span class="c1"># gopher</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">210</span>     <span class="c1"># wais</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">1025</span><span class="o">-</span><span class="mi">65535</span>  <span class="c1"># unregistered ports</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">280</span>     <span class="c1"># http-mgmt</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">488</span>     <span class="c1"># gss-http</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">591</span>     <span class="c1"># filemaker</span>
+<span class="n">acl</span> <span class="n">Safe_ports</span> <span class="n">port</span> <span class="mi">777</span>     <span class="c1"># multiling http</span>
+<span class="n">acl</span> <span class="n">CONNECT</span> <span class="n">method</span> <span class="n">CONNECT</span>
 
-#
-# Recommended minimum Access Permission configuration:
-#
-# Deny requests to certain unsafe ports
-#http_access deny !Safe_ports
+<span class="c1">#</span>
+<span class="c1"># Recommended minimum Access Permission configuration:</span>
+<span class="c1">#</span>
+<span class="c1"># Deny requests to certain unsafe ports</span>
+<span class="c1">#http_access deny !Safe_ports</span>
 
-# Deny CONNECT to other than secure SSL ports
-#http_access deny CONNECT !SSL_ports
+<span class="c1"># Deny CONNECT to other than secure SSL ports</span>
+<span class="c1">#http_access deny CONNECT !SSL_ports</span>
 
-# Only allow cachemgr access from localhost
-http_access allow localhost manager
-http_access deny manager
+<span class="c1"># Only allow cachemgr access from localhost</span>
+<span class="n">http_access</span> <span class="n">allow</span> <span class="n">localhost</span> <span class="n">manager</span>
+<span class="n">http_access</span> <span class="n">deny</span> <span class="n">manager</span>
 
-# We strongly recommend the following be uncommented to protect innocent
-# web applications running on the proxy server who think the only
-# one who can access services on &quot;localhost&quot; is a local user
-#http_access deny to_localhost
+<span class="c1"># We strongly recommend the following be uncommented to protect innocent</span>
+<span class="c1"># web applications running on the proxy server who think the only</span>
+<span class="c1"># one who can access services on &quot;localhost&quot; is a local user</span>
+<span class="c1">#http_access deny to_localhost</span>
 
-#
-# INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS
-#
+<span class="c1">#</span>
+<span class="c1"># INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS</span>
+<span class="c1">#</span>
 
-# Example rule allowing access from your local networks.
-# Adapt localnet in the ACL section to list your (internal) IP networks
-# from where browsing should be allowed
-http_access allow localnet
-http_access allow localhost
+<span class="c1"># Example rule allowing access from your local networks.</span>
+<span class="c1"># Adapt localnet in the ACL section to list your (internal) IP networks</span>
+<span class="c1"># from where browsing should be allowed</span>
+<span class="n">http_access</span> <span class="n">allow</span> <span class="n">localnet</span>
+<span class="n">http_access</span> <span class="n">allow</span> <span class="n">localhost</span>
 
-# And finally deny all other access to this proxy
-http_access deny all
+<span class="c1"># And finally deny all other access to this proxy</span>
+<span class="n">http_access</span> <span class="n">deny</span> <span class="n">all</span>
 
-# Squid normally listens to port 3128
-http_port 3128
+<span class="c1"># Squid normally listens to port 3128</span>
+<span class="n">http_port</span> <span class="mi">3128</span>
 
-# Uncomment and adjust the following to add a disk cache directory.
-#cache_dir ufs /var/cache/squid 100 16 256
+<span class="c1"># Uncomment and adjust the following to add a disk cache directory.</span>
+<span class="c1">#cache_dir ufs /var/cache/squid 100 16 256</span>
 
-# Leave coredumps in the first cache dir
-coredump_dir /var/cache/squid
+<span class="c1"># Leave coredumps in the first cache dir</span>
+<span class="n">coredump_dir</span> <span class="sr">/var/c</span><span class="n">ache</span><span class="o">/</span><span class="n">squid</span>
 
-#
-# Add any of your own refresh_pattern entries above these.
-#
-refresh_pattern ^ftp:       1440    20% 10080
-refresh_pattern ^gopher:    1440    0%  1440
-refresh_pattern -i (/cgi-bin/|\?) 0 0%  0
-refresh_pattern .       0   20% 4320
+<span class="c1">#</span>
+<span class="c1"># Add any of your own refresh_pattern entries above these.</span>
+<span class="c1">#</span>
+<span class="n">refresh_pattern</span> <span class="o">^</span><span class="n">ftp:</span>       <span class="mi">1440</span>    <span class="mi">20</span><span class="nv">%</span> <span class="nv">10080</span>
+<span class="n">refresh_pattern</span> <span class="o">^</span><span class="n">gopher:</span>    <span class="mi">1440</span>    <span class="mi">0</span><span class="nv">%</span>  <span class="nv">1440</span>
+<span class="n">refresh_pattern</span> <span class="o">-</span><span class="n">i</span> <span class="p">(</span><span class="sr">/cgi-bin/</span><span class="o">|\</span><span class="p">?)</span> <span class="mi">0</span> <span class="mi">0</span><span class="nv">%</span>  <span class="nv">0</span>
+<span class="n">refresh_pattern</span> <span class="o">.</span>       <span class="mi">0</span>   <span class="mi">20</span><span class="nv">%</span> <span class="nv">4320</span>
 
-#
-# Custom Configurations
-#
+<span class="c1">#</span>
+<span class="c1"># Custom Configurations</span>
+<span class="c1">#</span>
 
-# Hosts
-hosts_file C:/Windows/System32/drivers/etc/hosts
+<span class="c1"># Hosts</span>
+<span class="n">hosts_file</span> <span class="n">C:</span><span class="sr">/Windows/</span><span class="n">System32</span><span class="sr">/drivers/</span><span class="n">etc</span><span class="o">/</span><span class="n">hosts</span>
 
-# DNS
-dns_nameservers 192.168.0.127 192.168.10.127
+<span class="c1"># DNS</span>
+<span class="n">dns_nameservers</span> <span class="mf">192.168.0.127</span> <span class="mf">192.168.10.127</span>
 
-# Parent proxy with authentication
+<span class="c1"># Parent proxy with authentication</span>
 
-## この宛先へのリクエストは親プロキシを通さない
-acl dst.localnet dst 10.0.0.0/8
-acl dst.localnet dst 172.16.0.0/12
-acl dst.localnet dst 192.168.0.0/16
-acl dst.localdomain dstdomain .example.com
-acl dst.localdomain dstdomain .internal
+<span class="c1">## この宛先へのリクエストは親プロキシを通さない</span>
+<span class="n">acl</span> <span class="n">dst</span><span class="o">.</span><span class="n">localnet</span> <span class="n">dst</span> <span class="mf">10.0.0.0</span><span class="o">/</span><span class="mi">8</span>
+<span class="n">acl</span> <span class="n">dst</span><span class="o">.</span><span class="n">localnet</span> <span class="n">dst</span> <span class="mf">172.16.0.0</span><span class="o">/</span><span class="mi">12</span>
+<span class="n">acl</span> <span class="n">dst</span><span class="o">.</span><span class="n">localnet</span> <span class="n">dst</span> <span class="mf">192.168.0.0</span><span class="o">/</span><span class="mi">16</span>
+<span class="n">acl</span> <span class="n">dst</span><span class="o">.</span><span class="n">localdomain</span> <span class="n">dstdomain</span> <span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span>
+<span class="n">acl</span> <span class="n">dst</span><span class="o">.</span><span class="n">localdomain</span> <span class="n">dstdomain</span> <span class="o">.</span><span class="n">internal</span>
 
-## 親プロキシ（認証つき）
-cache_peer proxy.example.com parent 3128 0 name=proxy.parent no-query proxy-only login=username:password
-cache_peer_access proxy.parent deny dst.localnet
-cache_peer_access proxy.parent deny dst.localdomain
+<span class="c1">## 親プロキシ（認証つき）</span>
+<span class="n">cache_peer</span> <span class="n">proxy</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span> <span class="n">parent</span> <span class="mi">3128</span> <span class="mi">0</span> <span class="n">name</span><span class="o">=</span><span class="n">proxy</span><span class="o">.</span><span class="n">parent</span> <span class="k">no</span><span class="o">-</span><span class="n">query</span> <span class="n">proxy</span><span class="o">-</span><span class="n">only</span> <span class="n">login</span><span class="o">=</span><span class="n">username:password</span>
+<span class="n">cache_peer_access</span> <span class="n">proxy</span><span class="o">.</span><span class="n">parent</span> <span class="n">deny</span> <span class="n">dst</span><span class="o">.</span><span class="n">localnet</span>
+<span class="n">cache_peer_access</span> <span class="n">proxy</span><span class="o">.</span><span class="n">parent</span> <span class="n">deny</span> <span class="n">dst</span><span class="o">.</span><span class="n">localdomain</span>
 
-## 上記の宛先のみ直接アクセスを許可して、それ以外は直接アクセスさせない（必ず親プロキシを経由）
-always_direct allow dst.localnet
-always_direct allow dst.localdomain
-never_direct allow all
+<span class="c1">## 上記の宛先のみ直接アクセスを許可して、それ以外は直接アクセスさせない（必ず親プロキシを経由）</span>
+<span class="n">always_direct</span> <span class="n">allow</span> <span class="n">dst</span><span class="o">.</span><span class="n">localnet</span>
+<span class="n">always_direct</span> <span class="n">allow</span> <span class="n">dst</span><span class="o">.</span><span class="n">localdomain</span>
+<span class="n">never_direct</span> <span class="n">allow</span> <span class="n">all</span>
 
-# Proxy hostname
-visible_hostname proxy.internal
+<span class="c1"># Proxy hostname</span>
+<span class="n">visible_hostname</span> <span class="n">proxy</span><span class="o">.</span><span class="n">internal</span>
 
-# Logging with readable date
-logformat squid %tl %6tr %&gt;a %Ss/%03Hs %&lt;st %rm %ru %un %Sh/%&lt;A %mt
-logfile_rotate 30
-</code></pre>
+<span class="c1"># Logging with readable date</span>
+<span class="n">logformat</span> <span class="n">squid</span> <span class="nv">%tl</span> <span class="nv">%6tr</span> <span class="nv">%</span><span class="err">&gt;</span><span class="nv">a</span> <span class="nv">%Ss</span><span class="sr">/%03Hs %&lt;st %rm %ru %un %Sh/</span><span class="nv">%</span><span class="err">&lt;</span><span class="nv">A</span> <span class="nv">%mt</span>
+<span class="n">logfile_rotate</span> <span class="mi">30</span>
+</pre></div>
                 
                   
                 
@@ -656,7 +698,7 @@ logfile_rotate 30
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../jupyter/" title="Jupyter" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../macos/" title="macOS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -665,7 +707,7 @@ logfile_rotate 30
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                Jupyter
+                macOS
               </span>
             </div>
           </a>
@@ -729,7 +771,7 @@ logfile_rotate 30
           
         
       
-      <script>app.initialize({version:"1.0",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.3",url:{base:"../.."}})</script>
       
     
     
