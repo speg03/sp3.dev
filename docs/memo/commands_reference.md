@@ -100,6 +100,23 @@ refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/comma
 * Options
     * `-n NUM`: 末尾NUM行表示する。+NUMとすると先頭のNUM行目から表示する。
 
+## tar
+
+* Options
+    * `x`: アーカイブの展開
+    * `c`: アーカイブの作成
+    * `t`: アーカイブされているファイルの一覧
+    * `v`: 詳細表示
+    * `f`: アーカイブファイルの指定
+    * `z`: gzipフィルター
+    * `j`: bzip2フィルター
+
+## unzip
+
+* Options
+    * `-d exdir`: 展開先パスの指定
+    * `-l`: アーカイブされているファイルの一覧
+
 ## wget
 
 * Options
