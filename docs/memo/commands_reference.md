@@ -73,6 +73,14 @@ refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/comma
 
 ファイルを使用しているプロセスを調べる。
 
+## ps
+
+* Options
+    * `a`: すべてのプロセスを表示する
+    * `u`: ユーザー列を表示する
+    * `x`: ttyに紐付かないプロセスを表示する
+    * `f`: :penguin: プロセスツリーを表示する
+
 ## rsync
 
 * Options
