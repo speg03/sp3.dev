@@ -359,6 +359,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ps" title="ps" class="md-nav__link">
+    ps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rsync" title="rsync" class="md-nav__link">
     rsync
   </a>
@@ -586,6 +593,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ps" title="ps" class="md-nav__link">
+    ps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rsync" title="rsync" class="md-nav__link">
     rsync
   </a>
@@ -728,6 +742,16 @@
 </ul>
 <h2 id="lsof">lsof</h2>
 <p>ファイルを使用しているプロセスを調べる。</p>
+<h2 id="ps">ps</h2>
+<ul>
+<li>Options<ul>
+<li><code>a</code>: すべてのプロセスを表示する</li>
+<li><code>u</code>: ユーザー列を表示する</li>
+<li><code>x</code>: ttyに紐付かないプロセスを表示する</li>
+<li><code>f</code>: <img alt="🐧" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f427.svg" title=":penguin:" /> プロセスツリーを表示する</li>
+</ul>
+</li>
+</ul>
 <h2 id="rsync">rsync</h2>
 <ul>
 <li>Options<ul>
@@ -741,6 +765,7 @@
 <li><code>-o</code>, <code>--owner</code>: オーナーを維持する</li>
 <li><code>-D</code>: デバイスファイルやスペシャルファイルをそのままコピー</li>
 <li><code>-c</code>, <code>--checksum</code>: ファイルの更新日、サイズではなくチェックサムでコピーすべきかどうかを判断（ただし、1ファイルごとにチェックサムを計算するため遅くなる）</li>
+<li><code>-E</code>: <img alt="🐧" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f427.svg" title=":penguin:" /> --executabilityと同じ</li>
 <li><code>--executability</code>: 実行可能フラグを維持する</li>
 <li><code>-n</code>, <code>--dry-run</code>: ファイルコピーを実行せず何が起こるかだけ表示</li>
 <li><code>--rsync-path=PROGRAM</code>: リモート側で実行するrsyncのパスを指定（sudo rsyncを指定するとroot権限で実行することになる）</li>
@@ -790,7 +815,7 @@
 <h2 id="xargs">xargs</h2>
 <ul>
 <li>Options<ul>
-<li><code>-r</code>, <code>--no-run-if-empty</code>: 渡される引数がなければ実行しない</li>
+<li><code>-r</code>, <code>--no-run-if-empty</code>: <img alt="🐧" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f427.svg" title=":penguin:" /> 渡される引数がなければ実行しない（<img alt="🍎" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f34e.svg" title=":apple:" /> このオプションはないがデフォルトで同じ挙動になる）</li>
 </ul>
 </li>
 </ul>
