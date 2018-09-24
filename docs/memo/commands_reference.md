@@ -94,6 +94,7 @@ refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/comma
     * `-o`, `--owner`: オーナーを維持する
     * `-D`: デバイスファイルやスペシャルファイルをそのままコピー
     * `-c`, `--checksum`: ファイルの更新日、サイズではなくチェックサムでコピーすべきかどうかを判断（ただし、1ファイルごとにチェックサムを計算するため遅くなる）
+    * `-E`: :penguin: --executabilityと同じ
     * `--executability`: 実行可能フラグを維持する
     * `-n`, `--dry-run`: ファイルコピーを実行せず何が起こるかだけ表示
     * `--rsync-path=PROGRAM`: リモート側で実行するrsyncのパスを指定（sudo rsyncを指定するとroot権限で実行することになる）
@@ -133,4 +134,4 @@ refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/comma
 ## xargs
 
 * Options
-    * `-r`, `--no-run-if-empty`: 渡される引数がなければ実行しない
+    * `-r`, `--no-run-if-empty`: :penguin: 渡される引数がなければ実行しない（:apple: このオプションはないがデフォルトで同じ挙動になる）
