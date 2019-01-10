@@ -135,3 +135,10 @@ refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/comma
 
 * Options
     * `-r`, `--no-run-if-empty`: :penguin: 渡される引数がなければ実行しない（:apple: このオプションはないがデフォルトで同じ挙動になる）
+
+## zip
+
+`zip [options] [zipfile [file ...]]`
+
+* Options
+    * `-r`, `--recurse-paths`: fileがディレクトリのときに、再帰的にたどってzipfileに追加する
