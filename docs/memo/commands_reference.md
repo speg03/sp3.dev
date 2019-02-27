@@ -75,6 +75,9 @@ kill -USR1 <ddのプロセスID>
 
 ## git
 
+* Gitリポジトリのアーカイブ作成
+    * `git archive -o latest.zip HEAD`
+
 * 現在のパスがGitリポジトリかどうか
     * `git rev-parse --is-inside-work-tree`
 
