@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
       
       
     
     
-      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
@@ -62,6 +62,34 @@
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-121673953-1", "speg03.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -99,22 +127,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                SPEG03
-              </span>
-              <span class="md-header-nav__topic">
-                macOS
-              </span>
-            
+            <span class="md-header-nav__topic">
+              SPEG03
+            </span>
+            <span class="md-header-nav__topic">
+              macOS
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -137,7 +162,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -244,32 +268,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../aws/" title="AWS" class="md-nav__link">
-      AWS
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../commands_reference/" title="Commands Reference" class="md-nav__link">
       Commands Reference
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../fedora/" title="Fedora" class="md-nav__link">
-      Fedora
     </a>
   </li>
 
@@ -343,42 +343,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#homebrew" title="Homebrew" class="md-nav__link">
-    Homebrew
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips" title="Tips" class="md-nav__link">
-    Tips
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#font-smoothing" title="Font Smoothing" class="md-nav__link">
     Font Smoothing
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -431,42 +398,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#homebrew" title="Homebrew" class="md-nav__link">
-    Homebrew
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips" title="Tips" class="md-nav__link">
-    Tips
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#font-smoothing" title="Font Smoothing" class="md-nav__link">
     Font Smoothing
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -488,41 +422,7 @@
                 
                 
                 <h1 id="macos">macOS</h1>
-<h2 id="homebrew">Homebrew</h2>
-<ul>
-<li><a href="https://brew.sh/">Homebrew - The missing package manager for macOS</a></li>
-</ul>
-<h3 id="commands">Commands</h3>
-<ul>
-<li>リポジトリの更新</li>
-</ul>
-<div class="codehilite"><pre><span></span>brew update
-</pre></div>
-
-
-<ul>
-<li>パッケージの更新</li>
-</ul>
-<div class="codehilite"><pre><span></span>brew upgrade
-</pre></div>
-
-
-<ul>
-<li>古いバージョンのパッケージを削除</li>
-</ul>
-<div class="codehilite"><pre><span></span>brew cleanup
-</pre></div>
-
-
-<ul>
-<li>上記3つを同時に実行</li>
-</ul>
-<div class="codehilite"><pre><span></span>brew upgrade --cleanup
-</pre></div>
-
-
-<h2 id="tips">Tips</h2>
-<h3 id="font-smoothing">Font Smoothing</h3>
+<h2 id="font-smoothing">Font Smoothing</h2>
 <p>外部ディスプレイで表示するフォントがキレイに見えないときにフォントスムージングを無効化する。（0が無効化で1, 2と強くスムージングをかけることができる）</p>
 <div class="codehilite"><pre><span></span>defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
 </pre></div>
@@ -603,7 +503,6 @@
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
     <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
@@ -617,14 +516,13 @@
     
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../../assets/javascripts/application.b806dc00.js"></script>
       
         
         
@@ -644,12 +542,6 @@
         
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-121673953-1","speg03.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

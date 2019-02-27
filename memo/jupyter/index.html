@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
       
       
     
     
-      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
@@ -62,6 +62,34 @@
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-121673953-1", "speg03.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -99,22 +127,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                SPEG03
-              </span>
-              <span class="md-header-nav__topic">
-                Jupyter
-              </span>
-            
+            <span class="md-header-nav__topic">
+              SPEG03
+            </span>
+            <span class="md-header-nav__topic">
+              Jupyter
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -137,7 +162,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -244,32 +268,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../aws/" title="AWS" class="md-nav__link">
-      AWS
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../commands_reference/" title="Commands Reference" class="md-nav__link">
       Commands Reference
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../fedora/" title="Fedora" class="md-nav__link">
-      Fedora
     </a>
   </li>
 
@@ -329,13 +329,6 @@
   
     <label class="md-nav__title" for="__toc">目次</label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#options" title="Options" class="md-nav__link">
-    Options
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#magic-commands" title="Magic Commands" class="md-nav__link">
@@ -412,13 +405,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#options" title="Options" class="md-nav__link">
-    Options
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#magic-commands" title="Magic Commands" class="md-nav__link">
     Magic Commands
   </a>
@@ -450,14 +436,6 @@
                 
                 
                 <h1 id="jupyter">Jupyter</h1>
-<h2 id="options">Options</h2>
-<ul>
-<li><code>--no-browser</code>: ブラウザを自動起動しない</li>
-<li><code>--allow-root</code>: rootユーザーでの起動を許可する</li>
-<li><code>--ip=IPADDR</code>: ListenするIPアドレス (default: localhost)</li>
-<li><code>--port=PORT</code>: Listenするポート (default: 8888)</li>
-<li><code>--NotebookApp.token=TOKEN</code>: 初回アクセス時に入力する認証トークン（空文字にすると認証なし）</li>
-</ul>
 <h2 id="magic-commands">Magic Commands</h2>
 <p>refs: <a href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">Built-in magic commands - IPython</a></p>
 <ul>
@@ -536,7 +514,6 @@
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
     <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
@@ -550,14 +527,13 @@
     
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../../assets/javascripts/application.b806dc00.js"></script>
       
         
         
@@ -577,12 +553,6 @@
         
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-121673953-1","speg03.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>
