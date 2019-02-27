@@ -109,6 +109,9 @@ kill -USR1 <ddのプロセスID>
     * `--port=PORT`: Listenするポート (default: 8888)
     * `--NotebookApp.token=TOKEN`: 初回アクセス時に入力する認証トークン（空文字にすると認証なし）
 
+* HTML形式に変換
+    * `jupyter nbconvert --to html mynotebook.ipynb`
+
 ## last
 
 * Options
