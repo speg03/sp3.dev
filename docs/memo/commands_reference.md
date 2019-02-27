@@ -7,6 +7,25 @@ the_silver_searcher
 * Options
     * `--noheading`: 先頭行にファイル名を出力しない
 
+## aws
+
+* S3署名付きURLの発行
+    * `aws s3 presign --expires-in 3600 s3://bucket_name/object_key`
+    * 指定したオブジェクトを一時的に公開してダウンロードできるURLを発行する。`expires-in`は発行した署名付きURLの期限。デフォルトでは3600秒（1時間）。
+
+## brew
+
+[Homebrew - The missing package manager for macOS](https://brew.sh/)
+
+* リポジトリの更新
+    * `brew update`
+
+* パッケージの更新
+    * `brew upgrade`
+
+* 古いバージョンのパッケージを削除
+    * `brew cleanup`
+
 ## curl
 
 * Options
@@ -51,18 +70,41 @@ kill -USR1 <ddのプロセスID>
 ## find
 
 * リンク切れしたシンボリックリンクを探す
+    * `find -L /path/to/check -type l`
+    * ref: [Find broken symlinks and delete them](https://www.commandlinefu.com/commands/view/2369/find-broken-symlinks-and-delete-them)
 
-```
-find -L /path/to/check -type l
-```
+## git
 
-refs: [Find broken symlinks and delete them](https://www.commandlinefu.com/commands/view/2369/find-broken-symlinks-and-delete-them)
+* 現在のパスがGitリポジトリかどうか
+    * `git rev-parse --is-inside-work-tree`
+
+* Gitリポジトリルートのパスを表示
+    * `git rev-parse --show-cdup`
+    * `git rev-parse --show-toplevel`
+
+* コミットを指定してファイルを表示
+    * `git show REVISION:PATH`
+
+* 現在のブランチ名を表示
+    * `git symbolic-ref --short HEAD`
+
+* REVISIONのフォーマット
+    * `man gitrevisions`
 
 ## grep
 
 * Options
     * `-x`, `--line-regexp`: 行全体を検索対象とする
     * `-f FILE`, `--file=FILE`: ファイルの各行を検索パターンとして使う
+
+## jupyter
+
+* Options
+    * `--no-browser`: ブラウザを自動起動しない
+    * `--allow-root`: rootユーザーでの起動を許可する
+    * `--ip=IPADDR`: ListenするIPアドレス (default: localhost)
+    * `--port=PORT`: Listenするポート (default: 8888)
+    * `--NotebookApp.token=TOKEN`: 初回アクセス時に入力する認証トークン（空文字にすると認証なし）
 
 ## last
 
