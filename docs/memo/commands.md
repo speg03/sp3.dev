@@ -15,7 +15,7 @@ the_silver_searcher
 
 ## brew
 
-[Homebrew - The missing package manager for macOS](https://brew.sh/)
+Homebrew
 
 * リポジトリの更新
     * `brew update`
