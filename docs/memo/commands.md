@@ -167,6 +167,7 @@ kill -USR1 <ddのプロセスID>
     * `f`: アーカイブファイルの指定
     * `z`: gzipフィルター
     * `j`: bzip2フィルター
+    * `-C directory`: directoryに移動してから処理を行う
 
 ## unzip
 
