@@ -73,6 +73,15 @@ kill -USR1 <ddのプロセスID>
     * `find -L /path/to/check -type l`
     * ref: [Find broken symlinks and delete them](https://www.commandlinefu.com/commands/view/2369/find-broken-symlinks-and-delete-them)
 
+## gcloud
+
+google-cloud-sdk
+
+* 初期化
+    * `gcloud init`
+* コンポーネントの更新
+    * `gcloud components update`
+
 ## git
 
 * Gitリポジトリのアーカイブ作成
