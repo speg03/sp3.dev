@@ -3,7 +3,7 @@ site_description: Portal site about speg03
 site_author: Takahiro Yano
 site_url: https://sp3.dev
 
-copyright: Copyright &copy; 2018 Takahiro Yano
+copyright: Copyright &copy; 2018-2019 Takahiro Yano
 google_analytics: [UA-121673953-1, sp3.dev]
 remote_branch: master
 
