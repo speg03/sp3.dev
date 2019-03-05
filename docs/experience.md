@@ -27,6 +27,9 @@ TBD
 
 ## Certifications
 
+これまでに取得した認定資格など
+
+* JDLA Deep Learning for ENGINEER 2019 #1 (2019.02)
 * AWS Certified Solutions Architect - Professional (2018.03)
 * AWS Certified Solutions Architect - Associate (2016.03)
 * Red Hat Certified Specialist in Enterprise Application Server Administration (2014.01)
