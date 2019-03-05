@@ -12,3 +12,4 @@ deploy:
   target-branch: master
   on:
     branch: source
+  fqdn: sp3.dev
