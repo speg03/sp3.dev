@@ -20,6 +20,21 @@ Homebrew
 * リポジトリの更新
     * `brew update`
 
+* リポジトリの追加
+    * `brew tap user/repo`
+
+* パッケージの依存関係
+    * `brew deps formula`
+
+* パッケージのインストール
+    * `brew install`
+
+* パッケージの削除
+    * `brew uninstall`
+
+* パッケージの再インストール
+    * `brew reinstall`
+
 * パッケージの更新
     * `brew upgrade`
 
