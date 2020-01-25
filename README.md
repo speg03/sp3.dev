@@ -1,15 +1,9 @@
-# speg03.github.io
+# sp3.dev
 
-[![Build Status](https://travis-ci.org/speg03/speg03.github.io.svg?branch=source)](https://travis-ci.org/speg03/speg03.github.io)
+![deploy-gh-pages](https://github.com/speg03/sp3.dev/workflows/deploy-gh-pages/badge.svg)
 
 ## Run the builtin development server
 
 ```
-$ mkdocs serve
-```
-
-## Deploy to GitHub Pages
-
-```
-$ mkdocs gh-deploy
+mkdocs serve
 ```
