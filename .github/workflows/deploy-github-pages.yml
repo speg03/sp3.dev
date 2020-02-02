@@ -1,4 +1,4 @@
-name: deploy-gh-pages
+name: Deploy GitHub Pages
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v1
@@ -17,35 +17,17 @@ jobs:
       with:
         path: ~/.cache/pypoetry
         key: poetry-${{ hashFiles('poetry.lock') }}
-
-    - name: Install poetry
-      run: |
-        curl -sSLO https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py
-        python3 ./get-poetry.py --yes
-        echo '::add-path::~/.poetry/bin'
+    - uses: dschep/install-poetry-action@v1.3
 
     - name: Install dependencies
       run: poetry install
 
     - name: Build
       run: |
-        poetry run mkdocs build --verbose --clean --strict
+        mkdocs build --verbose --clean --strict
         cp ./CNAME ./site/
 
-    - uses: actions/upload-artifact@v1
-      with:
-        name: site
-        path: ./site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-18.04
-    steps:
-    - uses: actions/download-artifact@v1
-      with:
-        name: site
-
-    - name: Deploy
+    - name: Deploy GitHub Pages site
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
