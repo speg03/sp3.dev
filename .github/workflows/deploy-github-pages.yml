@@ -15,8 +15,8 @@ jobs:
         python-version: 3.7
     - uses: actions/cache@v1
       with:
-        path: ~/.cache/pypoetry
-        key: poetry-${{ hashFiles('poetry.lock') }}
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/poetry.lock') }}
     - uses: dschep/install-poetry-action@v1.3
 
     - name: Install dependencies
