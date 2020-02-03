@@ -23,9 +23,7 @@ jobs:
       run: poetry install
 
     - name: Build
-      run: |
-        mkdocs build --verbose --clean --strict
-        cp ./CNAME ./site/
+      run: mkdocs build --verbose --strict
 
     - name: Deploy GitHub Pages site
       uses: peaceiris/actions-gh-pages@v2
