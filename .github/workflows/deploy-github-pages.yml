@@ -31,3 +31,6 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./site
+      with:
+        username: sp3bot
+        useremail: 60644460+sp3bot@users.noreply.github.com
