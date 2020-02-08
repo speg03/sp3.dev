@@ -32,5 +32,5 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./site
       with:
-        username: sp3bot
-        useremail: 60644460+sp3bot@users.noreply.github.com
+        username: github-actions[bot]
+        useremail: 41898282+github-actions[bot]@users.noreply.github.com
