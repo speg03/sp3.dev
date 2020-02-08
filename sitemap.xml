@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://sp3.dev/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/experience/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/outside_work/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/products/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/memo/commands/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/memo/git/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/memo/gnupg/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/memo/jupyter/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/memo/macos/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sp3.dev/memo/squid/</loc>
-     <lastmod>2020-02-04</lastmod>
+     <lastmod>2020-02-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
