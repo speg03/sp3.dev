@@ -26,4 +26,4 @@
 1. 学習欲
 1. 最上志向
 
-refs: [CliftonStrengthsについて - Gallup](https://www.gallupstrengthscenter.com/home/ja-jp/about)
+refs: [CliftonStrengthsについて - Gallup](https://www.gallup.com/cliftonstrengths/ja/)
