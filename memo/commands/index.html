@@ -663,303 +663,495 @@
                 <h1 id="commands-reference">Commands Reference</h1>
 <h2 id="ag">ag</h2>
 <p>the_silver_searcher</p>
-<ul>
-<li>Options<ul>
-<li><code>--noheading</code>: 先頭行にファイル名を出力しない</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--noheading</code></td>
+<td>先頭行にファイル名を出力しない</td>
+</tr>
+</tbody>
+</table>
 <h2 id="aws">aws</h2>
-<ul>
-<li>S3署名付きURLの発行<ul>
-<li><code>aws s3 presign --expires-in 3600 s3://bucket_name/object_key</code></li>
-<li>指定したオブジェクトを一時的に公開してダウンロードできるURLを発行する。<code>expires-in</code>は発行した署名付きURLの期限。デフォルトでは3600秒（1時間）。</li>
-</ul>
-</li>
-</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># S3署名付きURLの発行</span>
+aws s3 presign --expires-in <span class="m">3600</span> s3://bucket_name/object_key
+</code></pre></div>
+
+
 <h2 id="brew">brew</h2>
 <p>Homebrew</p>
-<ul>
-<li>
-<p>リポジトリの更新</p>
-<ul>
-<li><code>brew update</code></li>
-</ul>
-</li>
-<li>
-<p>リポジトリの追加</p>
-<ul>
-<li><code>brew tap user/repo</code></li>
-</ul>
-</li>
-<li>
-<p>パッケージの依存関係</p>
-<ul>
-<li><code>brew deps formula</code></li>
-</ul>
-</li>
-<li>
-<p>パッケージのインストール</p>
-<ul>
-<li><code>brew install</code></li>
-</ul>
-</li>
-<li>
-<p>パッケージの削除</p>
-<ul>
-<li><code>brew uninstall</code></li>
-</ul>
-</li>
-<li>
-<p>パッケージの再インストール</p>
-<ul>
-<li><code>brew reinstall</code></li>
-</ul>
-</li>
-<li>
-<p>パッケージの更新</p>
-<ul>
-<li><code>brew upgrade</code></li>
-</ul>
-</li>
-<li>
-<p>古いバージョンのパッケージを削除</p>
-<ul>
-<li><code>brew cleanup</code></li>
-</ul>
-</li>
-</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># リポジトリの更新</span>
+brew update
+
+<span class="c1"># リポジトリの追加</span>
+brew tap user/repo
+
+<span class="c1"># パッケージの依存関係</span>
+brew deps formula
+
+<span class="c1"># パッケージのインストール</span>
+brew install
+
+<span class="c1"># パッケージの削除</span>
+brew uninstall
+
+<span class="c1"># パッケージの再インストール</span>
+brew reinstall
+
+<span class="c1"># パッケージの更新</span>
+brew upgrade
+
+<span class="c1"># 古いバージョンのパッケージを削除</span>
+brew cleanup
+</code></pre></div>
+
+
 <h2 id="curl">curl</h2>
-<ul>
-<li>Options<ul>
-<li><code>-C &lt;offset&gt;</code>, <code>--continue-at &lt;offset&gt;</code>: 部分ダウンロード（offsetに-を指定した場合は自動的にオフセットを検出して続きからダウンロードする）</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-C &lt;offset&gt;</code>, <code>--continue-at &lt;offset&gt;</code></td>
+<td>部分ダウンロード<br>（<code>offset</code>に<code>-</code>を指定した場合は自動的にオフセットを検出して続きからダウンロードする）</td>
+</tr>
+</tbody>
+</table>
 <h2 id="cut">cut</h2>
-<ul>
-<li>Options<ul>
-<li><code>-d &lt;delim&gt;</code>: デリミタの指定</li>
-<li><code>-f &lt;list&gt;</code>: デリミタで分割されたカラムのうち、出力するカラム番号</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-d &lt;delim&gt;</code></td>
+<td>デリミタの指定</td>
+</tr>
+<tr>
+<td><code>-f &lt;list&gt;</code></td>
+<td>デリミタで分割されたカラムのうち、出力するカラム番号</td>
+</tr>
+</tbody>
+</table>
 <h2 id="dd">dd</h2>
-<ul>
-<li>転送の進捗を確認する</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="err">kill -USR1 &lt;ddのプロセスID&gt;</span>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 転送の進捗を確認する</span>
+<span class="nb">kill</span> -USR1 &lt;ddのプロセスID&gt;
 </code></pre></div>
 
 
 <h2 id="df">df</h2>
 <p>ディスクごとのディスク使用量を調べる。</p>
-<ul>
-<li>Options<ul>
-<li><code>-h</code>: ヒューマンリーダブルな単位で表示</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-h</code></td>
+<td>ヒューマンリーダブルな単位で表示</td>
+</tr>
+</tbody>
+</table>
 <h2 id="dstat">dstat</h2>
-<ul>
-<li>Options<ul>
-<li><code>-a</code>: デフォルトの項目</li>
-<li><code>-m</code>: メモリ</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-a</code></td>
+<td>デフォルトの項目</td>
+</tr>
+<tr>
+<td><code>-m</code></td>
+<td>メモリ</td>
+</tr>
+</tbody>
+</table>
 <h2 id="du">du</h2>
 <p>ファイルやディレクトリごとのディスク使用量を調べる。</p>
-<ul>
-<li>Options<ul>
-<li><code>-d</code>: ディレクトリをたどっていく深さ</li>
-<li><code>-h</code>: ヒューマンリーダブルな単位で表示</li>
-<li><code>-s</code>: 指定したパスがディレクトリの場合、トータルのディスク使用量を表示する</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-d</code></td>
+<td>ディレクトリをたどっていく深さ</td>
+</tr>
+<tr>
+<td><code>-h</code></td>
+<td>ヒューマンリーダブルな単位で表示</td>
+</tr>
+<tr>
+<td><code>-s</code></td>
+<td>指定したパスがディレクトリの場合、トータルのディスク使用量を表示する</td>
+</tr>
+</tbody>
+</table>
 <h2 id="find">find</h2>
-<ul>
-<li>リンク切れしたシンボリックリンクを探す<ul>
-<li><code>find -L /path/to/check -type l</code></li>
-<li>ref: <a href="https://www.commandlinefu.com/commands/view/2369/find-broken-symlinks-and-delete-them">Find broken symlinks and delete them</a></li>
-</ul>
-</li>
-</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># リンク切れしたシンボリックリンクを探す</span>
+find -L /path/to/check -type l
+</code></pre></div>
+
+
 <h2 id="gcloud">gcloud</h2>
 <p>google-cloud-sdk</p>
-<ul>
-<li>初期化<ul>
-<li><code>gcloud init</code></li>
-</ul>
-</li>
-<li>コンポーネントの更新<ul>
-<li><code>gcloud components update</code></li>
-</ul>
-</li>
-</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 初期化</span>
+gcloud init
+
+<span class="c1"># コンポーネントの更新</span>
+gcloud components update
+</code></pre></div>
+
+
 <h2 id="git">git</h2>
-<ul>
-<li>
-<p>Gitリポジトリのアーカイブ作成</p>
-<ul>
-<li><code>git archive -o latest.zip HEAD</code></li>
-</ul>
-</li>
-<li>
-<p>現在のパスがGitリポジトリかどうか</p>
-<ul>
-<li><code>git rev-parse --is-inside-work-tree</code></li>
-</ul>
-</li>
-<li>
-<p>Gitリポジトリルートのパスを表示</p>
-<ul>
-<li><code>git rev-parse --show-cdup</code></li>
-<li><code>git rev-parse --show-toplevel</code></li>
-</ul>
-</li>
-<li>
-<p>コミットを指定してファイルを表示</p>
-<ul>
-<li><code>git show REVISION:PATH</code></li>
-</ul>
-</li>
-<li>
-<p>現在のブランチ名を表示</p>
-<ul>
-<li><code>git symbolic-ref --short HEAD</code></li>
-</ul>
-</li>
-<li>
-<p>REVISIONのフォーマット</p>
-<ul>
-<li><code>man gitrevisions</code></li>
-</ul>
-</li>
-</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Gitリポジトリのアーカイブ作成</span>
+git archive -o latest.zip HEAD
+
+<span class="c1"># 現在のパスがGitリポジトリかどうか</span>
+git rev-parse --is-inside-work-tree
+
+<span class="c1"># Gitリポジトリルートのパスを表示</span>
+git rev-parse --show-cdup
+git rev-parse --show-toplevel
+
+<span class="c1"># コミットを指定してファイルを表示</span>
+git show REVISION:PATH
+
+<span class="c1"># 現在のブランチ名を表示</span>
+git symbolic-ref --short HEAD
+
+<span class="c1"># REVISIONのフォーマット</span>
+man gitrevisions
+</code></pre></div>
+
+
 <h2 id="grep">grep</h2>
-<ul>
-<li>Options<ul>
-<li><code>-x</code>, <code>--line-regexp</code>: 行全体を検索対象とする</li>
-<li><code>-f FILE</code>, <code>--file=FILE</code>: ファイルの各行を検索パターンとして使う</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-x</code>, <code>--line-regexp</code></td>
+<td>行全体を検索対象とする</td>
+</tr>
+<tr>
+<td><code>-f FILE</code>, <code>--file=FILE</code></td>
+<td>ファイルの各行を検索パターンとして使う</td>
+</tr>
+</tbody>
+</table>
 <h2 id="jupyter">jupyter</h2>
-<ul>
-<li>
-<p>Options</p>
-<ul>
-<li><code>--no-browser</code>: ブラウザを自動起動しない</li>
-<li><code>--allow-root</code>: rootユーザーでの起動を許可する</li>
-<li><code>--ip=IPADDR</code>: ListenするIPアドレス (default: localhost)</li>
-<li><code>--port=PORT</code>: Listenするポート (default: 8888)</li>
-<li><code>--NotebookApp.token=TOKEN</code>: 初回アクセス時に入力する認証トークン（空文字にすると認証なし）</li>
-</ul>
-</li>
-<li>
-<p>HTML形式に変換</p>
-<ul>
-<li><code>jupyter nbconvert --to html mynotebook.ipynb</code></li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--no-browser</code></td>
+<td>ブラウザを自動起動しない</td>
+</tr>
+<tr>
+<td><code>--allow-root</code></td>
+<td>rootユーザーでの起動を許可する</td>
+</tr>
+<tr>
+<td><code>--ip=IPADDR</code></td>
+<td>ListenするIPアドレス（デフォルト: <code>localhost</code>）</td>
+</tr>
+<tr>
+<td><code>--port=PORT</code></td>
+<td>Listenするポート（デフォルト: <code>8888</code>）</td>
+</tr>
+<tr>
+<td><code>--NotebookApp.token=TOKEN</code></td>
+<td>初回アクセス時に入力する認証トークン<br>（空文字<code>''</code>にすると認証なし）</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="c1"># HTML形式に変換</span>
+jupyter nbconvert --to html mynotebook.ipynb
+</code></pre></div>
+
+
 <h2 id="last">last</h2>
-<ul>
-<li>Options<ul>
-<li><code>reboot</code>: 直近で再起動した時刻を確認</li>
-</ul>
-</li>
-</ul>
+<p>直近のログインを確認する。</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 直近で再起動した時刻を確認</span>
+last reboot
+</code></pre></div>
+
+
 <h2 id="lsof">lsof</h2>
 <p>ファイルを使用しているプロセスを調べる。</p>
 <h2 id="ps">ps</h2>
-<ul>
-<li>Options<ul>
-<li><code>a</code>: すべてのプロセスを表示する</li>
-<li><code>u</code>: ユーザー列を表示する</li>
-<li><code>x</code>: ttyに紐付かないプロセスを表示する</li>
-<li><code>f</code>: <img alt="🐧" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f427.svg" title=":penguin:" /> プロセスツリーを表示する</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a</code></td>
+<td>すべてのプロセスを表示する</td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>ユーザー列を表示する</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>ttyに紐付かないプロセスを表示する</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td><img alt="🐧" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f427.svg" title=":penguin:" /> プロセスツリーを表示する</td>
+</tr>
+</tbody>
+</table>
 <h2 id="rsync">rsync</h2>
-<ul>
-<li>Options<ul>
-<li><code>-v</code>, <code>--verbose</code>: 詳細表示</li>
-<li><code>-a</code>, <code>--archive</code>: <code>-rlptgoD</code>と同じ</li>
-<li><code>-r</code>, <code>--recursive</code>: 再帰的にたどる</li>
-<li><code>-l</code>, <code>--links</code>: シンボリックリンクをシンボリックリンクのままコピー</li>
-<li><code>-p</code>, <code>--perms</code>: パーミッションを維持する</li>
-<li><code>-t</code>, <code>--times</code>: タイムスタンプを維持する</li>
-<li><code>-g</code>, <code>--group</code>: グループを維持する</li>
-<li><code>-o</code>, <code>--owner</code>: オーナーを維持する</li>
-<li><code>-D</code>: デバイスファイルやスペシャルファイルをそのままコピー</li>
-<li><code>-c</code>, <code>--checksum</code>: ファイルの更新日、サイズではなくチェックサムでコピーすべきかどうかを判断（ただし、1ファイルごとにチェックサムを計算するため遅くなる）</li>
-<li><code>-E</code>: <img alt="🐧" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f427.svg" title=":penguin:" /> --executabilityと同じ</li>
-<li><code>--executability</code>: 実行可能フラグを維持する</li>
-<li><code>-n</code>, <code>--dry-run</code>: ファイルコピーを実行せず何が起こるかだけ表示</li>
-<li><code>--rsync-path=PROGRAM</code>: リモート側で実行するrsyncのパスを指定（sudo rsyncを指定するとroot権限で実行することになる）</li>
-<li><code>-z</code>, <code>--compress</code>: 転送時にデータを圧縮する</li>
-<li><code>-C</code>, <code>--cvs-exclude</code>: CVS関連ファイルを除外する</li>
-<li><code>-f</code>, <code>--filter=RULE</code>: ファイルのフィルタリングルール</li>
-<li><code>-F</code>: <code>--filter='dir-merge /.rsync-filter'</code>のエイリアス</li>
-<li><code>-P</code>: 部分ダウンロード、かつ、進捗の表示</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-v</code>, <code>--verbose</code></td>
+<td>詳細表示</td>
+</tr>
+<tr>
+<td><code>-a</code>, <code>--archive</code></td>
+<td><code>-rlptgoD</code>と同じ</td>
+</tr>
+<tr>
+<td><code>-r</code>, <code>--recursive</code></td>
+<td>再帰的にたどる</td>
+</tr>
+<tr>
+<td><code>-l</code>, <code>--links</code></td>
+<td>シンボリックリンクをシンボリックリンクのままコピー</td>
+</tr>
+<tr>
+<td><code>-p</code>, <code>--perms</code></td>
+<td>パーミッションを維持する</td>
+</tr>
+<tr>
+<td><code>-t</code>, <code>--times</code></td>
+<td>タイムスタンプを維持する</td>
+</tr>
+<tr>
+<td><code>-g</code>, <code>--group</code></td>
+<td>グループを維持する</td>
+</tr>
+<tr>
+<td><code>-o</code>, <code>--owner</code></td>
+<td>オーナーを維持する</td>
+</tr>
+<tr>
+<td><code>-D</code></td>
+<td>デバイスファイルやスペシャルファイルをそのままコピー</td>
+</tr>
+<tr>
+<td><code>-c</code>, <code>--checksum</code></td>
+<td>ファイルの更新日、サイズではなくチェックサムでコピーすべきかどうかを判断<br>（ただし、1ファイルごとにチェックサムを計算するため遅くなる）</td>
+</tr>
+<tr>
+<td><code>-E</code></td>
+<td><img alt="🐧" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f427.svg" title=":penguin:" /> <code>--executability</code>と同じ</td>
+</tr>
+<tr>
+<td><code>--executability</code></td>
+<td>実行可能フラグを維持する</td>
+</tr>
+<tr>
+<td><code>-n</code>, <code>--dry-run</code></td>
+<td>ファイルコピーを実行せず何が起こるかだけ表示</td>
+</tr>
+<tr>
+<td><code>--rsync-path=PROGRAM</code></td>
+<td>リモート側で実行するrsyncのパスを指定<br>（<code>'sudo rsync'</code>を指定するとroot権限で実行することになる）</td>
+</tr>
+<tr>
+<td><code>-z</code>, <code>--compress</code></td>
+<td>転送時にデータを圧縮する</td>
+</tr>
+<tr>
+<td><code>-C</code>, <code>--cvs-exclude</code></td>
+<td>CVS関連ファイルを除外する</td>
+</tr>
+<tr>
+<td><code>-f</code>, <code>--filter=RULE</code></td>
+<td>ファイルのフィルタリングルール</td>
+</tr>
+<tr>
+<td><code>-F</code></td>
+<td><code>--filter='dir-merge /.rsync-filter'</code>のエイリアス</td>
+</tr>
+<tr>
+<td><code>-P</code></td>
+<td>部分ダウンロード、かつ、進捗の表示</td>
+</tr>
+</tbody>
+</table>
 <h2 id="tail">tail</h2>
-<ul>
-<li>Options<ul>
-<li><code>-n NUM</code>: 末尾NUM行表示する。+NUMとすると先頭のNUM行目から表示する。</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-n NUM</code></td>
+<td>末尾<code>NUM</code>行表示する。<code>+NUM</code>とすると先頭の<code>NUM</code>行目から表示する</td>
+</tr>
+</tbody>
+</table>
 <h2 id="tar">tar</h2>
-<ul>
-<li>Options<ul>
-<li><code>x</code>: アーカイブの展開</li>
-<li><code>c</code>: アーカイブの作成</li>
-<li><code>t</code>: アーカイブされているファイルの一覧</li>
-<li><code>v</code>: 詳細表示</li>
-<li><code>f</code>: アーカイブファイルの指定</li>
-<li><code>z</code>: gzipフィルター</li>
-<li><code>j</code>: bzip2フィルター</li>
-<li><code>-C directory</code>: directoryに移動してから処理を行う</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x</code></td>
+<td>アーカイブの展開</td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td>アーカイブの作成</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td>アーカイブされているファイルの一覧</td>
+</tr>
+<tr>
+<td><code>v</code></td>
+<td>詳細表示</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>アーカイブファイルの指定</td>
+</tr>
+<tr>
+<td><code>z</code></td>
+<td>gzipフィルター</td>
+</tr>
+<tr>
+<td><code>j</code></td>
+<td>bzip2フィルター</td>
+</tr>
+<tr>
+<td><code>-C directory</code></td>
+<td><code>directory</code>に移動してから処理を行う</td>
+</tr>
+</tbody>
+</table>
 <h2 id="unzip">unzip</h2>
-<ul>
-<li>Options<ul>
-<li><code>-d exdir</code>: 展開先パスの指定</li>
-<li><code>-l</code>: アーカイブされているファイルの一覧</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-d exdir</code></td>
+<td>展開先パスの指定</td>
+</tr>
+<tr>
+<td><code>-l</code></td>
+<td>アーカイブされているファイルの一覧</td>
+</tr>
+</tbody>
+</table>
 <h2 id="wget">wget</h2>
-<ul>
-<li>Options<ul>
-<li><code>-c</code>, <code>--continue</code>: 部分ダウンロード</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-c</code>, <code>--continue</code></td>
+<td>部分ダウンロード</td>
+</tr>
+</tbody>
+</table>
 <h2 id="xargs">xargs</h2>
-<ul>
-<li>Options<ul>
-<li><code>-r</code>, <code>--no-run-if-empty</code>: <img alt="🐧" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f427.svg" title=":penguin:" /> 渡される引数がなければ実行しない（<img alt="🍎" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f34e.svg" title=":apple:" /> このオプションはないがデフォルトで同じ挙動になる）</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-r</code>, <code>--no-run-if-empty</code></td>
+<td><img alt="🐧" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f427.svg" title=":penguin:" /> 渡される引数がなければ実行しない<br><img alt="🍎" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f34e.svg" title=":apple:" /> このオプションはないがデフォルトで同じ挙動になる</td>
+</tr>
+</tbody>
+</table>
 <h2 id="zip">zip</h2>
-<p><code>zip [options] [zipfile [file ...]]</code></p>
-<ul>
-<li>Options<ul>
-<li><code>-r</code>, <code>--recurse-paths</code>: fileがディレクトリのときに、再帰的にたどってzipfileに追加する</li>
-</ul>
-</li>
-</ul>
+<div class="codehilite"><pre><span></span><code>zip <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>zipfile <span class="o">[</span>file ...<span class="o">]]</span>
+</code></pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-r</code>, <code>--recurse-paths</code></td>
+<td><code>file</code>がディレクトリのときに、再帰的にたどって<code>zipfile</code>に追加する</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
