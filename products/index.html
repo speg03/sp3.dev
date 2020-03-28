@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
       
@@ -64,31 +64,6 @@
     
     
     
-      
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-121673953-1", "sp3.dev")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
     
@@ -106,7 +81,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#products" tabindex="1" class="md-skip">
+      <a href="#products" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +90,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://sp3.dev" title="SPEG03" class="md-header-nav__button md-logo">
+        <a href="https://sp3.dev" title="SPEG03" aria-label="SPEG03" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -146,7 +121,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -312,66 +287,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../memo/git/" title="Git" class="md-nav__link">
-      Git
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../memo/gnupg/" title="GnuPG" class="md-nav__link">
-      GnuPG
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../memo/jupyter/" title="Jupyter" class="md-nav__link">
-      Jupyter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../memo/macos/" title="macOS" class="md-nav__link">
-      macOS
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../memo/squid/" title="Squid" class="md-nav__link">
-      Squid
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -427,7 +342,7 @@
 <li><a href="https://twitter.com/shishakai_bot">Twitter</a> (2014 - Present)</li>
 <li><a href="https://github.com/speg03/shishakai_bot">GitHub</a></li>
 </ul>
-<p>映画の試写会情報をツイートするBot。毎朝9時に<a href="http://movie.walkerplus.com/shisyakai/">Movie Walker</a>から、映画の試写会情報を取得する。Heroku上で稼働していて、Webページをスクレイピングすることで試写会情報を抽出している。</p>
+<p>映画の試写会情報をツイートするBot。毎朝9時に<a href="https://movie.walkerplus.com/shisyakai/">Movie Walker</a>から、映画の試写会情報を取得する。Heroku上で稼働していて、Webページをスクレイピングすることで試写会情報を抽出している。</p>
                 
                   
                 
@@ -490,24 +405,24 @@
           </div>
         
         powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
         and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs</a>
       </div>
       
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
-      <a href="https://github.com/speg03" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/speg03" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
     
-      <a href="https://twitter.com/speg03" class="md-footer-social__link fa fa-twitter"></a>
+      <a href="https://twitter.com/speg03" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
-      <a href="https://www.facebook.com/speg03" class="md-footer-social__link fa fa-facebook-square"></a>
+      <a href="https://www.facebook.com/speg03" target="_blank" rel="noopener" title="facebook-square" class="md-footer-social__link fa fa-facebook-square"></a>
     
-      <a href="https://www.linkedin.com/in/speg03" class="md-footer-social__link fa fa-linkedin"></a>
+      <a href="https://www.linkedin.com/in/speg03" target="_blank" rel="noopener" title="linkedin" class="md-footer-social__link fa fa-linkedin"></a>
     
-      <a href="mailto:speg03@gmail.com" class="md-footer-social__link fa fa-envelope-o"></a>
+      <a href="mailto:speg03@gmail.com" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
     
   </div>
 
@@ -517,7 +432,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
       
         
         
@@ -536,7 +451,7 @@
           
         
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
       
     
   </body>
