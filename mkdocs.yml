@@ -9,13 +9,22 @@ theme:
   name: material
   language: ja
 
+nav:
+  - index.md
+  - about.md
+  - experiences.md
+  - products.md
+  - activities.md
+  - メモ:
+    - memo/commands.md
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/speg03
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/speg03
-    - icon: fontawesome/brands/facebook-square
+    - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/speg03
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/speg03

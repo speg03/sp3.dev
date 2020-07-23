@@ -1,29 +1,22 @@
 # Home
 
-## About Me
+<pre style="line-height: 1em;">
+███████╗██████╗ ███████╗ ██████╗  ██████╗ ██████╗
+██╔════╝██╔══██╗██╔════╝██╔════╝ ██╔═████╗╚════██╗
+███████╗██████╔╝█████╗  ██║  ███╗██║██╔██║ █████╔╝
+╚════██║██╔═══╝ ██╔══╝  ██║   ██║████╔╝██║ ╚═══██╗
+███████║██║     ███████╗╚██████╔╝╚██████╔╝██████╔╝
+╚══════╝╚═╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝
+</pre>
+<!-- http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=SPEG03 -->
 
-* **Name**: speg03 (Takahiro Yano)
-* **Location**: Tokyo, Japan
-* **Email**: [speg03@gmail.com](mailto:speg03@gmail.com)
+:tada: This is speg03 (Takahiro Yano)!!
 
-関西人らしからぬ京都生まれ。焦らずのんびりマイペース、毎日のほほんと暮らす日々。
+## Contacts
 
-## Profile
-
-* IT Infrastructure Engineer / Software Developer (2009 - Present)
-
-最初の頃はJavaのWebアプリケーション開発などをやっていたが、そのうち部内のサーバー管理を任される。それ以降、インフラ構築の効率化などに興味を持つ。もともと開発をやっていたこともあり、開発者にとってうれしい開発環境を考えるのが好き。
-
-現在は深層学習に関するアプリケーション開発を行っている。深層学習フレームワークを用いた学習器の構築や、クラウドを利用した学習インフラの構築が主。
-
-## Strengths
-
-私の CliftonStrengths TOP5 (2018.07)
-
-1. 調和性
-1. 収集心
-1. 公平性
-1. 学習欲
-1. 最上志向
-
-refs: [CliftonStrengthsについて - Gallup](https://www.gallup.com/cliftonstrengths/ja/)
+* Social Networking:
+    :fontawesome-brands-github: [GitHub](https://github.com/speg03)
+    :fontawesome-brands-twitter: [Twitter](https://twitter.com/speg03)
+    :fontawesome-brands-facebook: [Facebook](https://www.facebook.com/speg03)
+    :fontawesome-brands-linkedin: [LinkedIn](https://www.linkedin.com/in/speg03)
+* Email: [speg03@gmail.com](mailto:speg03@gmail.com)
