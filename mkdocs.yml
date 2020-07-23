@@ -11,18 +11,19 @@ theme:
 
 extra:
   social:
-    - type: github
+    - icon: fontawesome/brands/github
       link: https://github.com/speg03
-    - type: twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/speg03
-    - type: facebook-square
+    - icon: fontawesome/brands/facebook-square
       link: https://www.facebook.com/speg03
-    - type: linkedin
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/speg03
-    - type: envelope-o
+    - icon: fontawesome/solid/envelope
       link: mailto:speg03@gmail.com
 
 markdown_extensions:
   - codehilite
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
