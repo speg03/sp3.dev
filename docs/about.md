@@ -1,24 +1,16 @@
 # 私について
 
-## About Me
-
-* **Name**: speg03 (Takahiro Yano)
-* **Location**: Tokyo, Japan
-* **Email**: [speg03@gmail.com](mailto:speg03@gmail.com)
+speg03 (Takahiro Yano)
 
 関西人らしからぬ京都生まれ。焦らずのんびりマイペース、毎日のほほんと暮らす日々。
 
-## Profile
+## 好きな言葉
 
-* IT Infrastructure Engineer / Software Developer (2009 - Present)
+学然後知不足（学びて然る後に足らざるを知る）
 
-最初の頃はJavaのWebアプリケーション開発などをやっていたが、そのうち部内のサーバー管理を任される。それ以降、インフラ構築の効率化などに興味を持つ。もともと開発をやっていたこともあり、開発者にとってうれしい開発環境を考えるのが好き。
+## 私の強み
 
-現在は深層学習に関するアプリケーション開発を行っている。深層学習フレームワークを用いた学習器の構築や、クラウドを利用した学習インフラの構築が主。
-
-## Strengths
-
-私の CliftonStrengths TOP5 (2018.07)
+私のクリフトンストレングス トップ5 (2018.07)
 
 1. 調和性
 1. 収集心
@@ -26,4 +18,4 @@
 1. 学習欲
 1. 最上志向
 
-refs: [CliftonStrengthsについて - Gallup](https://www.gallup.com/cliftonstrengths/ja/)
+参考: [さあ、才能（じぶん）に目覚めよう　新版 | 日本経済新聞出版](https://nikkeibook.nikkeibp.co.jp/item-detail/32143)
