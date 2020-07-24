@@ -1,4 +1,4 @@
-# Commands Reference
+# コマンド覚書
 
 ## ag
 
@@ -174,7 +174,7 @@ option|help
 `a`|すべてのプロセスを表示する
 `u`|ユーザー列を表示する
 `x`|ttyに紐付かないプロセスを表示する
-`f`|:penguin: プロセスツリーを表示する
+`f`|:fontawesome-brands-linux: プロセスツリーを表示する
 
 ## rsync
 
@@ -190,7 +190,7 @@ option|help
 `-o`, `--owner`|オーナーを維持する
 `-D`|デバイスファイルやスペシャルファイルをそのままコピー
 `-c`, `--checksum`|ファイルの更新日、サイズではなくチェックサムでコピーすべきかどうかを判断<br>（ただし、1ファイルごとにチェックサムを計算するため遅くなる）
-`-E`|:penguin: `--executability`と同じ
+`-E`|:fontawesome-brands-linux: `--executability`と同じ
 `--executability`|実行可能フラグを維持する
 `-n`, `--dry-run`|ファイルコピーを実行せず何が起こるかだけ表示
 `--rsync-path=PROGRAM`|リモート側で実行するrsyncのパスを指定<br>（`'sudo rsync'`を指定するとroot権限で実行することになる）
@@ -236,7 +236,7 @@ option|help
 
 option|help
 -|-
-`-r`, `--no-run-if-empty`|:penguin: 渡される引数がなければ実行しない<br>:apple: このオプションはないがデフォルトで同じ挙動になる
+`-r`, `--no-run-if-empty`|:fontawesome-brands-linux: 渡される引数がなければ実行しない<br>:fontawesome-brands-apple: このオプションはないがデフォルトで同じ挙動になる
 
 ## zip
 
