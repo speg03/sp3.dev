@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://sp3.dev/</loc>
-     <lastmod>2020-03-28</lastmod>
+     <lastmod>2020-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://sp3.dev/experience/</loc>
-     <lastmod>2020-03-28</lastmod>
+     <loc>https://sp3.dev/about/</loc>
+     <lastmod>2020-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://sp3.dev/outside_work/</loc>
-     <lastmod>2020-03-28</lastmod>
+     <loc>https://sp3.dev/experiences/</loc>
+     <lastmod>2020-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://sp3.dev/products/</loc>
-     <lastmod>2020-03-28</lastmod>
+     <lastmod>2020-08-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://sp3.dev/activities/</loc>
+     <lastmod>2020-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://sp3.dev/memo/commands/</loc>
-     <lastmod>2020-03-28</lastmod>
+     <lastmod>2020-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
