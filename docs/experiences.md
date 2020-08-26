@@ -12,6 +12,7 @@ TBD
 
 ## 認定資格
 
+* [TensorFlow Developer Certificate](https://www.credential.net/163aee9d-7a07-457c-ae8c-4097857e8aab) (2020.08)
 * JDLA Deep Learning for ENGINEER 2019 #1 (2019.02)
 * AWS 認定 ソリューションアーキテクト - プロフェッショナル (2018.03)
 * AWS 認定 ソリューションアーキテクト – アソシエイト (2016.03)
@@ -20,3 +21,9 @@ TBD
 * ソフトウェア開発技術者 (2005.06)
 * 基本情報技術者 (2002.05)
 * 初級システムアドミニストレータ (2001.11)
+
+## 受講履歴
+
+* [TensorFlow in Practice Specialization - Coursera](https://www.coursera.org/account/accomplishments/specialization/certificate/PRAMEY7KTYZ5) (2020.08)
+* [Machine Learning with TensorFlow Google Cloud Platform 日本語版 Specialization - Coursera](https://www.coursera.org/account/accomplishments/specialization/certificate/E3QANX53BCCQ) (2019.11)
+* [Machine Learning - Coursera](https://www.coursera.org/account/accomplishments/certificate/AMVLVGFJU9WM) (2016.12)
