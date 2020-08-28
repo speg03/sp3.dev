@@ -14,10 +14,10 @@ TBD
 
 * [TensorFlow Developer Certificate](https://www.credential.net/163aee9d-7a07-457c-ae8c-4097857e8aab) (2020.08)
 * JDLA Deep Learning for ENGINEER 2019 #1 (2019.02)
-* AWS 認定 ソリューションアーキテクト - プロフェッショナル (2018.03)
-* AWS 認定 ソリューションアーキテクト – アソシエイト (2016.03)
+* [AWS 認定 ソリューションアーキテクト - プロフェッショナル](https://www.youracclaim.com/badges/43640358-6a49-44a4-befe-cc47f98b8c75/public_url) (2018.03)
+* [AWS 認定 ソリューションアーキテクト – アソシエイト](https://www.youracclaim.com/badges/7267869e-738e-4532-8eef-a415316903c8/public_url) (2016.03)
 * Red Hat 認定 JBoss 管理者 (JBoss Enterprise Application Platform 6) (2014.01)
-* 認定スクラムマスター (2013.01)
+* [認定スクラムマスター](https://certification.scrumalliance.org/accounts/234954-takahiro-yano/certifications/251237-csm) (2013.01)
 * UMLモデリング技能認定試験 L2認定技術者 (2009.11)
 * UMLモデリング技能認定試験 L1認定技術者 (2009.05)
 * ソフトウェア開発技術者 (2005.06)
