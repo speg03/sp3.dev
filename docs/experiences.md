@@ -26,6 +26,7 @@ TBD
 
 ## 受講履歴
 
+* [MLOps (Machine Learning Operations) Fundamentals - Coursera](https://www.coursera.org/account/accomplishments/certificate/8B9ZELREJY87) (2021.01)
 * [TensorFlow in Practice Specialization - Coursera](https://www.coursera.org/account/accomplishments/specialization/certificate/PRAMEY7KTYZ5) (2020.08)
 * [Machine Learning with TensorFlow Google Cloud Platform 日本語版 Specialization - Coursera](https://www.coursera.org/account/accomplishments/specialization/certificate/E3QANX53BCCQ) (2019.11)
 * [Machine Learning - Coursera](https://www.coursera.org/account/accomplishments/certificate/AMVLVGFJU9WM) (2016.12)
