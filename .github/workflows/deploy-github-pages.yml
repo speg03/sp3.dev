@@ -10,27 +10,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-python@v1
-    - uses: actions/cache@v1
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/poetry.lock') }}
+    - uses: actions/setup-python@v2
     - uses: snok/install-poetry@v1.1.1
       with:
-        virtualenvs-create: false
+        virtualenvs-create: true
+        virtualenvs-in-project: true
+
+    - name: Load cached venv
+      id: cached-poetry-dependencies
+      uses: actions/cache@v2
+      with:
+        path: .venv
+        key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
 
     - name: Install dependencies
       run: poetry install
+      if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
 
     - name: Build
-      run: mkdocs build --verbose --strict
+      run: |
+        source .venv/bin/activate
+        mkdocs build --verbose --strict
 
     - name: Deploy GitHub Pages site
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./site
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        username: github-actions[bot]
-        useremail: 41898282+github-actions[bot]@users.noreply.github.com
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
+        cname: www.sp3.dev
+        user_name: github-actions[bot]
+        user_email: github-actions[bot]@users.noreply.github.com
