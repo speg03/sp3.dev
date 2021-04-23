@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
-    - uses: snok/install-poetry@v1.1.1
+    - uses: snok/install-poetry@v1.1.4
       with:
         virtualenvs-create: true
         virtualenvs-in-project: true
@@ -24,8 +24,8 @@ jobs:
         key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
 
     - name: Install dependencies
-      run: poetry install
       if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+      run: poetry install --no-interaction --no-root
 
     - name: Build
       run: |
